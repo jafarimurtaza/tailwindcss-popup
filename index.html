@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="bg-slate-900 w-full h-screen flex items-center justify-center text-white">
+
+        <details class="open">
+            <!-- Button to be visible -->
+            <summary
+                class="bg-blue-300 rounded-2xl block px-6 py-4 text-xl hover:bg-blue-500 hover:duration-300 hover:text-white cursor-pointer">
+                Click me
+            </summary>
+
+            <!-- Content it will be hidden, till user clicks on the summary button. -->
+            <div class="bg-white rounded-2xl w-[50%] h-[40%] my-auto mx-auto absolute inset-0 text-gray-600 p-4 py-8">
+
+                <!-- Close drop down -->
+                <span onclick="document.querySelector('details').removeAttribute('open')"
+                    class="bg-gray-400 rounded-full flex items-center justify-center text-3xl font-bold uppercase absolute -right-4 -top-4 w-10 h-10 text-white hover:bg-blue-200 hover:duration-200 cursor-pointer">
+                    X
+                </span>
+
+                <!-- title -->
+                <h1 class="text-2xl text-center text-blue-300 font-bold">
+                    This is a popup.
+                </h1>
+
+                <p class="text-gray-600 text-base my-3 text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum enim sint accusamus dolor, architecto
+                    omnis laborum tempora vitae, eveniet corporis qui officiis accusantium eius, esse corrupti possimus
+                    repudiandae! Quod esse, sed laudantium nobis tenetur dolores impedit quaerat, ipsa molestias eaque.
+                </p>
+            </div>
+        </details>
+
+    </div>
+</body>
+
+</html>
